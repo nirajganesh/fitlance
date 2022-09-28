@@ -72,7 +72,6 @@ class _dashboard_memberlistState extends State<dashboard_memberlist> {
       dashboard_memberitem listdata=dashboard_memberitem(memberdata['id'],memberdata['name'],memberdata['join_date'],memberdata['exp_date'],memberdata['balance'],memberdata['contact'],memberdata['total'],memberdata['paid']);
       data_details.add(listdata);
     }
-
     return data_details;
   }
 
@@ -297,6 +296,8 @@ class _dashboard_memberlistState extends State<dashboard_memberlist> {
       filter_memberlist();
     });
   }
+
+
   @override
   Widget build(BuildContext context) {
     bool issearching=searchcontroller.text.isNotEmpty;

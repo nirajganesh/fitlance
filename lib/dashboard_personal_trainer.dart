@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:convert';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -13,7 +12,6 @@ import 'package:syncfusion_flutter_pdf/pdf.dart';
 import 'package:webproject/modal/dashboard_bottom_sheet.dart';
 import 'package:webproject/modal/dashboard_personal_traineritem.dart';
 import 'package:webproject/modal/getcontroller.dart';
-
 import 'modal/pdfile.dart';
 
 
@@ -249,12 +247,12 @@ class _dashboard_personal_trainerState extends State<dashboard_personal_trainer>
 
         final PdfPageTemplateElement headerTemplate =
         PdfPageTemplateElement(const Rect.fromLTWH(0, 0, 515, 50));
-//Draw text in the header.
+        //Draw text in the header.
         headerTemplate.graphics.drawString(
           'Month report revenue of Memberlist June-2021', PdfStandardFont(PdfFontFamily.helvetica, 12),
           //bounds: const Rect.fromLTWH(0, 15, 200, 20)
         );
-//Add the header element to the document.
+       //Add the header element to the document.
         document.template.top = headerTemplate;
 
         PdfGridRow header=grid.headers[0];
